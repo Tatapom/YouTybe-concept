@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* вся шапка, отступ от вверха,и после. от левого края, и правого края листа*/
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 70px;
+}
+/*делаем кнопку меню*/
+.menu-button {
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: #fff;
+width: 20px;
+height: 17px;
+border: none;
+margin-right: 28px;
+cursor: pointer;
+}
+/*полоски в кнопке*/
+.menu-line {
+display: block;
+background: #1F2022;
+width: 20px;
+height: 3px;
+border-radius: 20px;
+}
+/*отступ для лого от поисковика*/
+.logo {
+  margin-right: 49px;
+}
+/*поисковая строка (прямоуг., родительский компонент*/
+.input-group {
+background: #EBEBEB;
+border-radius: 22px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 18px;
+padding-top: 12px;
+padding-bottom: 12px;
+max-width: 830px;
+width: 50%;
+
+}
+/*поле куда вводится , что надо найти*/
+.input-search {
+  background-color:transparent;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+
+  font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #30384C;
+}
+/*кнопка для поиска*/
+.button-search {
+  width: 19px;
+  height: 19px;
+  border:none;
+  background-color:transparent;
+  cursor: pointer;
+}
+/*иконка для поиска*/
+.icon-search {
+fill: #000;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/*блок с тремя иконками */
+.icons-link {
+  text-decoration: none;
+  opacity: 0.24;
+}
+/*эффект при наведении*/
+.icons-link:hover {
+  opacity: 0.8;
+}
+.icons-link:not(:last-child) {
+margin-right: 50px;
+}
